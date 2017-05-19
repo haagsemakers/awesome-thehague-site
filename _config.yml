@@ -1,1 +1,22 @@
 name: Awesome The Hague
+
+# Sass settings
+sass:
+    sass_dir: _scss
+    style: :compressed
+
+github: [metadata]
+
+navlinks:
+- title: Pitch Nights
+  url: /pitch-nights
+  id: pitch-nights
+- title: Trustees
+  url: /trustees
+  id: trustees
+- title: Inzendingen
+  url: /inzendingen
+  id: inzendingen
+- title: Partners
+  url: /partners
+  id: partners

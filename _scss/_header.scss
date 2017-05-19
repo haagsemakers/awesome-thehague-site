@@ -1,0 +1,17 @@
+header.awesome-navheader {
+  border-bottom: 1px solid $color-awesome;
+  nav.navbar {
+    background-color: #FFF;
+    ul {
+      li {
+        a.nav-link {
+          font-size: 1rem;
+          color: #000;
+          &.active {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

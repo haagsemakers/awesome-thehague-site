@@ -2,7 +2,7 @@
 <html lang="nl">
   {% include head.html %}
 
-  <body>
+  <body{% if page.id %} data-current-page="{{ page.id }}"{% endif %}>
     <!-- {% include header-hm.html %} -->
 
     {% include header.html %}

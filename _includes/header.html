@@ -1,12 +1,17 @@
-<!-- <header class="page-header">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1>Awesome The Hague</h1>
-      </div>
-      <div class="col">
-        <p>This is Awesome The Hague</p>
-      </div>
+<header class="awesome-navheader">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="{{site.baseurl}}/">{{ site.name }}</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        {% for item in site.navlinks %}
+          <li class="nav-item">
+            <a href="{{site.baseurl}}{{ item.url }}" class="nav-link" data-page-id="{{item.id}}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-  </div>
-</header> -->
+  </nav>
+</header>

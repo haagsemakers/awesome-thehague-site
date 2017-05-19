@@ -1,0 +1,345 @@
+$color-awesome: #FB3E76;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+img.img-fluid {
+  width: 100%;
+}
+
+a.btn {
+  border-radius: 0;
+  background-color: transparent;
+  border: 2px solid $color-awesome;
+  color: $color-awesome;
+  margin: 3em 0;
+  font-weight: 600;
+  padding: 20px 30px;
+  font-size: 1.5rem;
+}
+
+
+  header {
+    .primary_navigation-wrapper {
+      display: none;
+    }
+  }
+  section.wrapper {
+    padding: 6em 0;
+    h2.section-heading {
+      text-transform: uppercase;
+      letter-spacing: -3px;
+      font-size: 42px;
+      color: #333;
+    }
+    a {
+      color: $color-awesome;
+    }
+    a.btn {
+      border-color: $color-awesome;
+      &:hover {
+        border-color: $color-awesome;
+        background-color: $color-awesome;
+        color: #FFF;
+      }
+    }
+    a.btn-light {
+      border-color: $color-awesome;
+      color: $color-awesome;
+      background-color: #FFF;
+      &:hover {
+        border-color: #FFF;
+        background-color: transparent;
+        color: #FFF;
+      }
+    }
+  }
+
+  #main-wrapper {
+
+  }
+
+  #banner {
+    position: relative;
+    background-color: $color-awesome;
+    background-image: url("../images/awesome/awesome_header_bg.png");
+    background-position: center center;
+    background-size: cover;
+    padding-top: 1.5em;
+    .hm-logo {
+      text-align: center;
+      margin-bottom: 6em;
+      img {
+      }
+    }
+    .awesome-logo {
+      text-align: center;
+      margin-bottom: 3em;
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 250px;
+        width: 250px;
+      }
+    }
+    .awesome-intro {
+      color: #FFF;
+      line-height: 1.4;
+      margin-bottom: 3em;
+      h2 {
+        margin-top: 0;
+        text-shadow: 1px 1px 1px #000;
+      }
+      h3 {
+        font-weight: 200;
+        text-shadow: 1px 1px 1px #000;
+      }
+    }
+    .money-call {
+      text-align: center;
+      .btn-money {
+        background-color: #FFF;
+        border: 3px solid #FFF;
+        border-radius: 3px;
+        text-transform: uppercase;
+        color: $color-awesome;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 18px;
+        margin: 10px;
+        &:hover {
+          background-color: transparent;
+          color: #FFF;
+        }
+      }
+    }
+  }
+
+
+
+  #what-we-do {
+    text-align: center;
+  }
+
+  #rsvp {
+    background-color: $color-awesome;
+    color: #FFF;
+    text-align: center;
+    a {
+      color: #fff
+    }
+    .pitch-night-date {
+      background-color: #FFF;
+      padding: 30px;
+      text-align: center;
+      border: 3px dotted $color-awesome;
+      margin: 1.5em 0;
+      a {
+        color: $color-awesome; }
+      h3 {
+        color: #000;
+      }
+      .date {
+        margin: 20px 0;
+        font-weight: 600;
+      }
+      .rsvp {
+        a {
+          margin: 20px;
+          padding: 20px;
+          &:hover {
+            color: #FFF;
+          }
+        }
+      }
+    }
+  }
+
+
+  #what-we-look-for {
+    background-color: lighten($color-awesome, 30);
+    text-align: center;
+    padding: 3em 0;
+    h2 {
+      margin-bottom: 1.5em;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 120px;
+      margin-bottom: 1.5em;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+
+  #ideas {
+    padding: 3em 0;
+    background-color: $color-awesome;
+    text-align: center;
+    h2 {
+      color: #FFF;
+      margin-bottom: 1.5em;
+    }
+    .idea {
+      margin-bottom: 1.5em;
+      .content {
+        padding: 10px;
+        background-color: #FFF;
+        img {
+
+        }
+        h3 {
+          font-size: 16px;
+          text-align: left;
+        }
+        p {
+          font-size: 13px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+
+  #how-it-works {
+    text-align: center;
+    padding: 3em 0;
+    h2 {
+      margin-bottom: 1.5em;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 60px;
+      margin-bottom: 1.5em;
+    }
+    i {
+      color: $color-awesome;
+    }
+    p {
+      font-size: 14px;
+    }
+    a.btn {
+      border-color: $color-awesome;
+      &:hover {
+        background-color: $color-awesome;
+        color: #FFF;
+      }
+    }
+  }
+
+
+  #trustees {
+    background-color: $color-awesome;
+    color: #FFF;
+    h2 {
+      color: #FFF;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    ul {
+      li {
+        font-size: 14px;
+        line-height: 2;
+      }
+    }
+    .trustee-call {
+      text-align: center;
+    }
+  }
+
+
+  #when-where {
+    background-color: lighten($color-awesome, 30);
+    .pitch-night-date {
+      background-color: #FFF;
+      padding: 30px;
+      text-align: center;
+      border: 3px dotted $color-awesome;
+      margin: 1.5em 0;
+      .date {
+        margin: 20px 0;
+        font-weight: 600;
+      }
+      .rsvp {
+        a {
+          margin: 20px;
+        }
+      }
+    }
+  }
+
+
+  #partners {
+    padding: 3em 0;
+    border-top: 3px solid $color-awesome;
+    border-bottom: 3px solid $color-awesome;
+    text-align: center;
+    h3 {
+      margin-top: 1.5em;
+    }
+    p {
+      font-size: 13px;
+      margin-top: 1em;
+    }
+  }
+
+
+  footer {
+    background-color: $color-awesome;
+    border: 0;
+  }
+
+
+footer.hm-footer {
+  padding: 3rem 0;
+  color: #fff;
+  font-size: 1rem;
+  a {
+    color: #FFF;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer-logo {
+    padding: 28px 0 34px;
+    img {
+      margin-bottom: 0.5rem;
+    }
+    margin-bottom: 1rem;
+  }
+  .footer-block {
+    margin-bottom: 20px;
+    .footer-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    ul {
+      li {
+        i {
+          width: 15px;
+        }
+      }
+    }
+  }
+}
