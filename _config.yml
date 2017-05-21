@@ -20,3 +20,6 @@ navlinks:
 - title: Partners
   url: /partners
   id: partners
+- title: FAQ
+  url: /faq
+  id: faq

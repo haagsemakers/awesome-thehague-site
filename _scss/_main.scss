@@ -20,6 +20,14 @@ img.img-fluid {
   width: 100%;
 }
 
+a {
+  color: $color-awesome;
+  &:hover,
+  &:focus {
+    color: $color-awesome;
+  }
+}
+
 a.btn {
   border-radius: 0;
   background-color: transparent;
@@ -138,35 +146,37 @@ a.btn {
     background-color: $color-awesome;
     color: #FFF;
     text-align: center;
+  }
+.pitch-night-invite{
+  background-color: $color-awesome;
+  color: #FFF;
+  text-align: center;
+  border: 3px dotted #FFF;
+  margin: 1.5em 0;
+  padding: 30px;
+  .pitch-night-date {
     a {
-      color: #fff
+      color: #FFF; }
+    h3 {
+      color: #000;
     }
-    .pitch-night-date {
-      background-color: #FFF;
-      padding: 30px;
-      text-align: center;
-      border: 3px dotted $color-awesome;
-      margin: 1.5em 0;
+    .date {
+      margin: 20px 0;
+      font-weight: 600;
+    }
+    .rsvp {
       a {
-        color: $color-awesome; }
-      h3 {
-        color: #000;
-      }
-      .date {
-        margin: 20px 0;
-        font-weight: 600;
-      }
-      .rsvp {
-        a {
-          margin: 20px;
-          padding: 20px;
-          &:hover {
-            color: #FFF;
-          }
+        margin: 20px;
+        padding: 20px;
+        border-color: #FFF;
+        &:hover {
+          color: $color-awesome;
+          background-color: #FFF;
         }
       }
     }
   }
+}
 
 
   #what-we-look-for {
@@ -245,47 +255,39 @@ a.btn {
   }
 
 
-  #trustees {
-    background-color: $color-awesome;
+#become-trustee {
+  background-color: $color-awesome;
+  color: #FFF;
+  padding: 30px 0;
+  color: #FFF;
+  h2 {
     color: #FFF;
-    h2 {
-      color: #FFF;
-    }
-    h3 {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 1.5;
-    }
-    ul {
-      li {
-        font-size: 14px;
-        line-height: 2;
-      }
-    }
-    .trustee-call {
-      text-align: center;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  ul {
+    li {
+      font-size: 14px;
+      line-height: 2;
     }
   }
+
+  .trustee-call {
+    text-align: center;
+    a {
+      color: #FFF;
+      border-color: #FFF;
+    }
+  }
+}
 
 
   #when-where {
     background-color: lighten($color-awesome, 30);
-    .pitch-night-date {
-      background-color: #FFF;
-      padding: 30px;
-      text-align: center;
-      border: 3px dotted $color-awesome;
-      margin: 1.5em 0;
-      .date {
-        margin: 20px 0;
-        font-weight: 600;
-      }
-      .rsvp {
-        a {
-          margin: 20px;
-        }
-      }
-    }
+
   }
 
 
