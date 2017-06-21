@@ -160,9 +160,18 @@ a.btn {
     h3 {
       color: #000;
     }
+    .location {
+      padding: 30px;
+      img {
+        width: 50%;
+      }
+    }
     .date {
       margin: 20px 0;
       font-weight: 600;
+      date {
+        color: #000;
+      }
     }
     .rsvp {
       a {
