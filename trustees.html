@@ -16,315 +16,66 @@ id: trustees
       <p class="text-center"><strong>Echt geld, van echte mensen voor mensen met echte plannen!</strong></p>
       De micro-grant van €1.000,- is "no strings attached". Dit betekent geen papierwerk, moeilijke verantwoording en lange termijn afspraken. Je spreekt met elkaar af hoe het bedrag op de beste manier kan worden uitgegeven, en je gaat aan de slag! </p>
 
+      <section id="become-trustee">
+        <div class="container">
+          <div class="col-sm-12">
+            <h2 class="section-heading">Word Trustee</h2>
+          </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <h3>Maandelijks netwerk evenement</h3>
+                <ul>
+                  <li>Bezoek de Pitch Night iedere maand</li>
+                  <li>Neem een vriend of relatie mee</li>
+                  <li>Lukt het je niet om aanwezig te zijn? Stuur een afgevaardigde</li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <h3>Stem op het meest awesome idee</h3>
+                <ul>
+                  <li>Stel vragen en geef feedback</li>
+                  <li>Stem op jouw favoriete idee</li>
+                  <li>Je bent 1 van de 20 stemgerechtigden</li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <h3>Draag bij aan onze stad</h3>
+                <ul>
+                  <li>Doneer €50,- per editie</li>
+                  <li>Voor minimaal 3 edities</li>
+                  <li>Stoppen als Trustee? Introduceer een nieuwe trustee</li>
+                </ul>
+              </div>
+              <div class="col-sm-12 trustee-call">
+                <a class="btn btn-light" href="https://haagsemakers.nl/contact">Aanmelden als trustee</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="meet-the-trustees">
         <h2>Meet the trustees</h2>
         <p>Dit zijn de Trustees van Awesome The Hague: </p>
         <div class="row">
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Arn van der Pluijm
-              </div>
-              <div class="description">
-                Als organisator van Awesome ben ik 1 van de Trustees!
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
+          {% for trustee in site.trustee %}
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="trustee-container">
+                <div class="avatar">
+                  {% if trustee.img %}
+                    <img src="{{site.baseurl}}/img/trustees/{{trustee.img}}" class="img-fluid">
+                  {% else %}
+                    <img src="{{site.baseurl}}/img/trustees/avatar.jpg" class="img-fluid">
+                  {% endif %}
+                </div>
+                <div class="name">{{trustee.name}}</div>
+                <div class="tagline">{{trustee.tagline}}</div>
               </div>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Incognito
-              </div>
-              <div class="description">
-                Deze Trustee blijft liever anoniem.
-              </div>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="trustee-container vacant">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Beschikbaar
-              </div>
-              <div class="description">
-                Er is nog plek als Trustee. <a href="#become-trustee">Meld je aan!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container vacant">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Beschikbaar
-              </div>
-              <div class="description">
-                Er is nog plek als Trustee. <a href="#become-trustee">Meld je aan!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container vacant">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Beschikbaar
-              </div>
-              <div class="description">
-                Er is nog plek als Trustee. <a href="#become-trustee">Meld je aan!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container vacant">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Beschikbaar
-              </div>
-              <div class="description">
-                Er is nog plek als Trustee. <a href="#become-trustee">Meld je aan!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="trustee-container vacant">
-              <div class="avatar">
-                <i class="fa fa-3x fa-user"></i>
-              </div>
-              <div class="name">
-                Beschikbaar
-              </div>
-              <div class="description">
-                Er is nog plek als Trustee. <a href="#become-trustee">Meld je aan!</a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
-
     </div>
-
-    <section id="become-trustee">
-      <div class="container">
-        <div class="col-sm-12">
-          <h2 class="section-heading">Word Trustee</h2>
-        </div>
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-12 col-md-4">
-              <h3>Maandelijks netwerk evenement</h3>
-              <ul>
-                <li>Bezoek de Pitch Night iedere maand</li>
-                <li>Neem een vriend of relatie mee</li>
-                <li>Lukt het je niet om aanwezig te zijn? Stuur een afgevaardigde</li>
-              </ul>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <h3>Stem op het meest awesome idee</h3>
-              <ul>
-                <li>Stel vragen en geef feedback</li>
-                <li>Stem op jouw favoriete idee</li>
-                <li>Je bent 1 van de 20 stemgerechtigden</li>
-              </ul>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <h3>Draag bij aan onze stad</h3>
-              <ul>
-                <li>Doneer €50,- per editie</li>
-                <li>Voor minimaal 3 edities</li>
-                <li>Stoppen als Trustee? Introduceer een nieuwe trustee</li>
-              </ul>
-            </div>
-            <div class="col-sm-12 trustee-call">
-              <a class="btn btn-light" href="https://haagsemakers.nl/contact">Aanmelden als trustee</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 </main>

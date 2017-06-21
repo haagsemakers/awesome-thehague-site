@@ -10,32 +10,26 @@ body.page {
 
 .page.trustees {
   .meet-the-trustees {
+    padding: 3rem 0;
     .trustee-container {
       border: 1px solid $color-awesome;
       text-align: center;
-      padding: 30px;
       margin-bottom: 1.5rem;
       .avatar {
-
+        min-height: 250px;
       }
       .name {
+        padding: 10px;
         font-weight: 600;
+        font-size: 16px;
       }
-      .description {
-        font-size: 0.8rem;
-        a {
-          color: #FFF;
-          text-decoration: underline;
-        }
-      }
-    }
-    .vacant {
-      background-color: $color-awesome;
-      color: #FFF;
-      .avatar {
-        opacity: 0.2;
+      .tagline {
+        font-size: 0.9rem;
+        padding: 20px;
+        height: 90px;
       }
     }
+
   }
 }
 

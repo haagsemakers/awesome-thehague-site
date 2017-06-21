@@ -3,6 +3,8 @@ name: Awesome The Hague
 collections:
   submissions:
     output: true
+  trustee:
+    output: false
 
 # Sass settings
 sass:
