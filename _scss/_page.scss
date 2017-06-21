@@ -1,4 +1,4 @@
-main.page {
+body.page {
   padding: 3rem 0;
   h1.page-title {
     text-align: center;
@@ -61,6 +61,26 @@ main.page {
       }
       &.vacant {
 
+      }
+    }
+  }
+}
+
+
+body.page.inzendingen {
+  .submission-list {
+    .submission {
+      .submission-inner {
+        position: relative;
+        font-size: 14px;
+        span.badge {
+          position: absolute;
+          top: 60px;
+          right: 10px;
+          font-size: 15px;
+          font-weight: 400;
+          letter-spacing: 1px;
+        }
       }
     }
   }

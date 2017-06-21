@@ -4,7 +4,7 @@ title: Inzendingen
 id: inzendingen
 ---
 
-<main class="page pitch-nights">
+<main>
   <div class="page-header">
     <div class="container">
       <h1 class="page-title">{{ page.title }}</h1>
@@ -12,7 +12,46 @@ id: inzendingen
   </div>
   <div class="page-content">
     <div class="container">
-      <p>Binnekort plaatsen we hier de inzendingen en de winnaars van Awesome The Hague</p>
+      <div class="row submission-list">
+        {% for submission in site.submissions %}
+          <div class="col-sm-12 col-md-6 col-lg-3 submission">
+            <div class="submission-inner">
+              <h3>{{ submission.title }}</h3>
+              <img src="{{site.baseurl}}/{{submission.img}}" class="img-fluid">
+              <p class="description">{{submission.description}}</p>
+              {% if submission.winner==true %}<span class="badge badge-success">winnaar</span>{% endif %}
+              <a href="{{submission.link}}" target="_blank">meer <i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <br><br><p>Op een later moment wordt deze lijst aangevuld met alle geselecteerde inzendingen.</p>
     </div>
   </div>
+
+
 </main>
+
+
+
+
+<!--
+{% for collection in site.collections %}
+
+  {% assign name = collection.label %}
+
+  <section>
+    <h1>{{ name }}</h1>
+
+    {% for page in site.[name] %}
+
+    <article>
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.content | markdownify }}</p>
+    </article>
+    {% endfor %}
+
+  </section>
+
+{% endfor %} -->

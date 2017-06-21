@@ -1,5 +1,9 @@
 name: Awesome The Hague
 
+collections:
+  submissions:
+    output: true
+
 # Sass settings
 sass:
     sass_dir: _scss
